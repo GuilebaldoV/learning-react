@@ -1,0 +1,45 @@
+basicamente las rutas sera como un componene contenedor
+en el cual dependiendo de la ruta ese contenido se mostrara
+
+primero tenemos que setear la ruta principal en el main
+en donde root es un elemento que nosotros creamos
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root></Root>,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+    <RouterProvider router={router} />
+);
+
+para el manejo de errores cramos nuestro propia error page y la seteamos claramente
+
+    errorElement: <ErrorPage />,
+
+para que el componente contacto se renderize dentro de nuestro root layoyt
+lo hacemos hijo del layaout de la siguiente manera
+
+{
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "contacts/:contactId",
+        element: <Contact />,
+      },
+    ],
+  },
+
+  perro necesitamos decirle en el root donde poner estos childs
+
+<div id="detail">
+          <Outlet></Outlet>
+        </div>
+
+las referencias se hacen con linkt to no con elementos A

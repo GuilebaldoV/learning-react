@@ -1,0 +1,82 @@
+Rect para crear interfaces es una libreria
+trabaja con el virtual doom
+usa jsx q se parece al html
+no CEO npm run build
+
+los componentes permiten separar  el codigo y los elmentos de la interfaz en pequeñas
+piezas independites y reutilizables
+estado variables que pueda tener la aplicacion
+
+hay varias formas de declarar componentes de manera funcional expressada y en clases
+los componentes tienen props, valores que reciben los componentes props es un objeto
+las props son inmutables
+todo el uso de props esta en comoponetes js
+una cosa a tomar en cuenta es que con el modulo prop-types podemos definir 
+cual es el tipo de prop que queremos
+
+<!-- estado -->
+son los valoes internos que maneja la logica y los datos de un
+ commponente tiene 3 caracteristicas
+1. es inmutables 
+2. no se puede modificar directamente
+3. es asincrono
+
+el estado se puede pasar de los padres a los hijos
+
+<!-- renderizado condicional -->
+
+si tengo cierto valor, rendrizo uno o otro componente
+un claro ejemplo, cuando alguien no esta logeado se vuelve a pintar la interface 
+
+<!-- para renderizar elementos como listas -->
+
+es necesario que cada elemento de por ejemplo un arreglo tengo una key 
+para que internamente react la maneje mas rapido en el virtual doom
+
+<!-- evnetos -->
+los eventos se nombran usando camelCase
+con jsx pasas una funcion como el manejador de evento en vez de una string
+se tienen que videan las funcionesa
+se puede bindear usando la forma de ES6 o la 7
+
+<!--La comunicacion en react -->
+tenemos 3 casos de comuniacion entre los componentes de reac
+1.-comuniacion entre un componete padre a uno hijo
+2.- un componente hijo y su padre
+3.- entre componentetes no relacionados
+
+<!-- ciclo de vida de los componentes -->
+Metodos especiales que ofrece react para realizar ciertas cosas automaticamnte
+
+1.Montaje
+tiene metodos que se ejecutan cuando se crea un component y se inserta en el arbol del DOM
+*constructutor- inica el etado y enlaza manejadores de eventos
+*render- metodo requerido, dibuja
+*componentDidMount- se ejecuta despues de la insecion es util para ejecutar suscripciones o peticiones asincronas a apis bases de datos, servicios
+
+2.Actualizacion
+se ejecutan para cambios de estado
+*render de nuevo
+*comopontedDidMount-
+
+3.Desmotanje
+*comopoenteDidhoument- se jecuta antes de destruir el componente
+
+<!--Hooks-->
+son una nueva incorporacion que nos permite engnchar el estado y el cclo de vida
+en componentees basados en funciones
+es lo que mas se usa, sin embargo el 70% de las webs ya hechas no estan en hooks
+
+podemos constuir nuestros propios hooks con recact
+los hooks personalizados tienen que llevar la palabra use al princpio y usar camel case
+basicamente extraemos la logica de nuestro hook y lo metemos en esta funcionc
+y nos servira para poder reutilizarlo facilmente en otra aplicacion
+
+<!-- referencias -->
+basicamente una forma de trabajar con elementos ya renderizados en el doom sin tener que cambiar su estado, es decir sin necesidad de que estos elementos vuelvan a renderizarse
+
+<!-- css -->
+se puede aplicar css de distintas maneras
+
+<!-- portales -->
+basicamenteee, definir enlementos en cierto lado pero porder renderizarlos en otro
