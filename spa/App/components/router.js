@@ -45,7 +45,8 @@ export async function router(){
         await ajax({url:`${api.url}/recipes/complexSearch?query=${localStorage.getItem('foodSearch')}&number=12&apiKey=${api.password}`,
         place:d.querySelector('.recipe-section'),
         cbSucces:(recipes)=>{
-            console.log(recipes)
+            // console.log()
+            console.log(recipes,"recipes")
             if(recipes.totalResults===0){
                 d.getElementsByTagName('h2')[0].insertAdjacentElement('afterend',subtitle('No results found'))
                 d.querySelector('.loader').style.display="none"
@@ -91,6 +92,7 @@ export async function router(){
 
     } 
     else {
+        console.log("aqui")
         scroll(0,0)
         $root.insertAdjacentElement('afterbegin',nav())
         let id=localStorage.getItem('recipeId');

@@ -75,7 +75,7 @@ img{
   color: white;
   align-items: center;
   height: 100%;
-  background-image: url(header-bg.jpg);
+  background-image: url(img/header-bg.jpg);
   background-position-x: right;
   background-position: right;
   background-size:cover;
@@ -237,7 +237,10 @@ body{
   justify-items: end;
 }
 
-
+.option a{
+  color: #222;
+  text-decoration: none;
+}
 
 .options article{
   padding: 1rem;
@@ -400,7 +403,17 @@ strong{
 }
 
 .error{
-  color: red;
+  color: beige;
+  background-color: crimson;
+  width: 80%;
+  margin: auto;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-justify:distribute-all-lines; */
+  align-items: center;
+  padding: 0.5rem;
   font-weight: 200;
   font-size: 1.6rem;
 }

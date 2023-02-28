@@ -11,3 +11,4 @@ export default{
     types,
     offset
 }
+

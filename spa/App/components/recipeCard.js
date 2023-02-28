@@ -9,7 +9,8 @@ export function recipeCard(props){
     return `
     <article">
         <figure class="recipe-card" data-id=${id}>
-            <a href="#/${id}"><img data-id=${id} src=${url}>
+            <a href="#/${id}">
+            <img data-id=${id} src=${url}>
             <figcaption data-id=${id}>
                 <p data-id=${id}>${title}</p>
              </figcaption>
