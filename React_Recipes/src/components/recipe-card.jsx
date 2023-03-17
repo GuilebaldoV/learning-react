@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 const RecipeCard = ({props}) => {
     // console.log(props)
-    window.scrollTo(0,0)
+    // window.scrollTo(0,0)
     let url=props.image?props.image:`https://spoonacular.com/recipeImages/${props.id}-556x370.${props.imageType}`
     return ( 
         <article>

@@ -75,7 +75,6 @@ img{
   color: white;
   align-items: center;
   height: 100%;
-  background-image: url(img/header-bg.jpg);
   background-position-x: right;
   background-position: right;
   background-size:cover;
@@ -416,6 +415,15 @@ strong{
   padding: 0.5rem;
   font-weight: 200;
   font-size: 1.6rem;
+}
+
+.button-back{
+  background-color: rgb(106, 113, 128);
+  cursor: pointer;
+}
+
+.logotype a{
+  margin-left: 0;
 }
 
 @media(max-width:700px){

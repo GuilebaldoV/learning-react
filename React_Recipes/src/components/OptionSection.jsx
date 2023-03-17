@@ -9,7 +9,7 @@ const OptionSection = () => {
         <OptionCard name="Salad" img="/img/salad.png"></OptionCard>
         <OptionCard name="Soup" img="/img/soup.png"></OptionCard>
         <OptionCard name="Bread" img="/img/breads.png"></OptionCard>
-        <OptionCard name="breakast" img="/img/breakfast.png"></OptionCard>
+        <OptionCard name="Breakfast" img="/img/breakfast.png"></OptionCard>
         <OptionCard name="Sauces" img="/img/sauces.png"></OptionCard>
         <OptionCard name="Drinks" img="/img/drinks.png"></OptionCard>
         </section>

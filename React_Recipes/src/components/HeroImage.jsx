@@ -2,7 +2,7 @@ const HeroImage = () => {
     // console.log(img)
     return (
         <>
-        <div className="hero-image">
+        <div className="hero-image" style={{backgroundImage:"url(/img/header-bg.jpg)"}}>
             <div className="background">
                 <div className="titles">
                     <h2>WIDE OPTIONS OF CHOICE</h2>

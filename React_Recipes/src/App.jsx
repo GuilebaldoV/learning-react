@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home  from "./components/Home";
 import RecipePost from './components/RecipePost';
 import SearchSection from './components/Search';
+import TypeSection from "./components/TypeSection"
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/recipe/:recipeId' element={<RecipePost></RecipePost>}></Route>
       <Route path='search/:search' element={<SearchSection></SearchSection>}></Route>
+      <Route path='type/:type' element={<TypeSection></TypeSection>}></Route>
     </Routes>
     </>
   )

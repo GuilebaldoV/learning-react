@@ -1,5 +1,5 @@
 const Error = ({props}) => {
-    
+    console.log(props)
     return (
         <>
         <div className="error">

@@ -19,13 +19,20 @@ const Form = () => {
     const handleldClick=(e)=>{
         navegarr(`search/${form.search}`)
     }
+    const handledKeyDown=(e)=>{
+        console.log("hola",e)
+        if(e.keyCode==13){
+            e.preventDefault()
+            navegarr(`search/${form.search}`)    
+        }
+    }
     
     return ( 
         <>
         <form className="form">
         <h2>Search your Recipes</h2>
         <div className="search">
-        <input name="search" onChange={handledChange}></input>
+        <input name="search" onKeyDown={handledKeyDown} onSubmit={handleldClick} onChange={handledChange}></input>
         <div onClick={handleldClick} className="search-img">
             <img src="img/search.png"></img>
         </div>

@@ -16,7 +16,7 @@ const RecipePost = () => {
     
     <Navbar></Navbar>
     <main className="main main-top">
-
+    {/* {data} */}
     {data?(<>
     <section className="recipe-post">
     
@@ -36,7 +36,7 @@ const RecipePost = () => {
     </div>
     
         </section>
-    </>):(<>No data xddd</>)}
+    </>):(<> </>)}
 
     <h2>You may also like</h2>
 
